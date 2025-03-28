@@ -9,12 +9,12 @@ def caesar_cipher(string, shift_num)
       num_array_two.push(" ")
     elsif num.between?(33, 64)
       num_array_two.push(num)
-    elsif num + shift_num > 122
+    elsif num_size > 122
       num_array_two.push(num - 26 + shift_num)
     elsif num_size.between?(91, 96)
       num_array_two.push(num - 26 + shift_num)
     else
-      num_array_two.push(num + shift_num)
+      num_array_two.push(num_size)
     end
   end
 
